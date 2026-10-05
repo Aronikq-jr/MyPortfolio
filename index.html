@@ -11,11 +11,10 @@
 </head>
 <body>
     <!-- Navigation Bar (Taken from Bootstrap)-->  
-    <nav class="navbar sticky-top border-bottom border-secondary-subtle">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-orange" href="#home">Aroniks Portfolio</a>
+    <nav class="navbar sticky-top bg-body-tertiary border-bottom">
+        <div class="container flex-column flex-md-row gap-2">
+            <a class="navbar-brand fw-bold text-warning" href="#home">Aroniks Portfolio</a>
             <div class="navbar-nav flex-row gap-3 gap-md-4">
-                <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#skills">Skills</a>
                 <a class="nav-link" href="#education">Education</a>
                 <a class="nav-link" href="#contact">Contact Me</a>
@@ -28,81 +27,64 @@
             <div class="row align-items-center g-5">
  
                 <div class="col-lg-7">
-                    <p class="text-secondary fs-5 mb-1">Hi, I am</p>
-                    <p class="fs-3 mb-2">Aron Eustaquio</p>
-                    <h1 class="display-4 fw-bold text-orange">Aspiring Software Engineer</h1>
-                    <p class="text-secondary fs-5 col-lg-10">
+                    <p class="fs-3 mb-2">I am Aron Eustaquio</p>
+                    <h1 class="display-4 fw-bold text-warning">Future Software Engineer!</h1>
+                    <p class="text-secondary fs-5">
                         Information Systems student who codes, builds games, and edits videos in my free time.
                     </p>
  
                     <div class="d-flex flex-wrap gap-3 mt-4">
-                        <a class="btn btn-orange btn-lg px-4" href="#contact">Contact Me</a>
+                        <a class="btn btn-warning btn-lg px-4" href="#contact">Contact Me</a>
                         <a class="btn btn-outline-light btn-lg px-4" href="#skills">See My Skills</a>
-                    </div>
- 
-                    <div class="stats-bar rounded-3 p-3 mt-5">
-                        <div class="row text-center g-2">
-                            <div class="col-4 border-end border-secondary">
-                                <div class="fs-3 fw-bold text-orange">6</div>
-                                <div class="small text-secondary">Years of video editing</div>
-                            </div>
-                            <div class="col-4 border-end border-secondary">
-                                <div class="fs-3 fw-bold text-orange">4</div>
-                                <div class="small text-secondary">Programming languages</div>
-                            </div>
-                            <div class="col-4">
-                                <div class="fs-3 fw-bold text-orange">Honors</div>
-                                <div class="small text-secondary">Every year, now Dean's List</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
  
-                <!-- Put your photo in the same folder as this file and name it profile.jpg (square photos work best). -->
+                <!-- Profile Picture -->
                 <div class="col-lg-5 d-flex justify-content-center">
-                    <div class="photo-circle" role="img" aria-label="Photo of Aron Eustaquio"></div>
+                    <div class="ratio ratio-1x1 w-75 rounded-circle overflow-hidden border border-4 border-warning">
+                        <img src="profile.jpg" alt="Photo of Aron Eustaquio" class="object-fit-cover bg-body-secondary">
+                    </div>
                 </div>
  
             </div>
         </div>
     </section>
-
     <section id="skills" class="py-5">
         <div class="container">
-            <h2 class="border-start border-4 border-orange ps-3 mb-4 fw-bold">Skills</h2>
+            <h2 class="border-start border-4 border-warning ps-3 mb-4 fw-bold">Skills</h2>
             <div class="row row-cols-1 row-cols-md-2 g-3">
  
                 <div class="col">
-                    <div class="card h-100 border-secondary">
+                    <div class="card h-100 bg-body-tertiary border-secondary">
                         <div class="card-body">
-                            <h3 class="h5 text-orange">Programming</h3>
+                            <h3 class="h5 text-warning">Programming</h3>
                             <p class="mb-0">C#, Java, Python, and GDScript.</p>
                         </div>
                     </div>
                 </div>
  
                 <div class="col">
-                    <div class="card h-100 border-secondary">
+                    <div class="card h-100 bg-body-tertiary border-secondary">
                         <div class="card-body">
-                            <h3 class="h5 text-orange">Databases</h3>
+                            <h3 class="h5 text-warning">Databases</h3>
                             <p class="mb-0">MySQL, a database management system.</p>
                         </div>
                     </div>
                 </div>
  
                 <div class="col">
-                    <div class="card h-100 border-secondary">
+                    <div class="card h-100 bg-body-tertiary border-secondary">
                         <div class="card-body">
-                            <h3 class="h5 text-orange">Version control</h3>
+                            <h3 class="h5 text-warning">Version control</h3>
                             <p class="mb-0">Git, including experience working in collaborative environments.</p>
                         </div>
                     </div>
                 </div>
  
                 <div class="col">
-                    <div class="card h-100 border-secondary">
+                    <div class="card h-100 bg-body-tertiary border-secondary">
                         <div class="card-body">
-                            <h3 class="h5 text-orange">Video editing</h3>
+                            <h3 class="h5 text-warning">Video editing</h3>
                             <p class="mb-0">6 years of experience with Adobe Premiere Pro and DaVinci Resolve.</p>
                         </div>
                     </div>
@@ -111,10 +93,10 @@
             </div>
         </div>
     </section>
-
+    
     <section id="education" class="py-5">
         <div class="container">
-            <h2 class="border-start border-4 border-orange ps-3 mb-4 fw-bold">Education</h2>
+            <h2 class="border-start border-4 border-warning ps-3 mb-4 fw-bold">Education</h2>
  
             <ul class="list-group list-group-flush col-lg-8">
                 <li class="list-group-item bg-transparent px-0 d-md-flex justify-content-between">
@@ -135,7 +117,7 @@
                 </li>
             </ul>
  
-            <div class="card border-secondary border-start border-4 border-orange col-lg-8 mt-4">
+            <div class="card bg-body-tertiary border-warning col-lg-8 mt-4">
                 <div class="card-body">
                     <h3 class="h5">Academic honors</h3>
                     <p class="mb-0">
@@ -149,12 +131,12 @@
 
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="border-start border-4 border-orange ps-3 mb-4 fw-bold">Contact me</h2>
+            <h2 class="border-start border-4 border-warning ps-3 mb-4 fw-bold">Contact me!</h2>
             <p class="text-secondary fs-5 col-lg-8">
                 Want to work together, ask about a project, or just talk code? Send me a message.
             </p>
             <div class="d-flex flex-wrap gap-3">
-                <a class="btn btn-orange" href="mailto:aroncedric.eustaquio@antipolo.benilde.edu.ph">Email me</a>
+                <a class="btn btn-warning" href="mailto:aroncedric.eustaquio@antipolo.benilde.edu.ph">Email me</a>
                 <a class="btn btn-outline-light" href="https://github.com/Aronikq-jr" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
