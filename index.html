@@ -4,81 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aron Eustaquio - Portfolio</title>
+    <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Lato Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar (Taken from bootstrap)-->  
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <!-- Navigation Bar (Taken from Bootstrap)-->  
+    <nav class="navbar sticky-top border-bottom border-secondary-subtle">
         <div class="container">
-            <a class="navbar-brand " href="#home">Aron</a>
-            <div class="navbar-nav flex-row gap-5">
+            <a class="navbar-brand fw-bold text-orange" href="#home">Aroniks Portfolio</a>
+            <div class="navbar-nav flex-row gap-3 gap-md-4">
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#career">Career Path</a>
+                <a class="nav-link" href="#education">Education</a>
                 <a class="nav-link" href="#contact">Contact Me</a>
             </div>
         </div>
     </nav>
 
-
-    <h1 class="text-center my-4">Welcome to My Portfolio</h1>
-
-    <section id="about">
+    <section id="home" class="py-5">
         <div class="container">
-            <div class="card border-secondary col-lg-8 mx-auto">
+            <div class="row align-items-center g-5">
+ 
+                <div class="col-lg-7">
+                    <p class="text-secondary fs-5 mb-1">Hi, I am</p>
+                    <p class="fs-3 mb-2">Aron Eustaquio</p>
+                    <h1 class="display-4 fw-bold text-orange">Aspiring Software Engineer</h1>
+                    <p class="text-secondary fs-5 col-lg-10">
+                        Information Systems student who codes, builds games, and edits videos in my free time.
+                    </p>
+ 
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a class="btn btn-orange btn-lg px-4" href="#contact">Contact Me</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#skills">See My Skills</a>
+                    </div>
+ 
+                    <div class="stats-bar rounded-3 p-3 mt-5">
+                        <div class="row text-center g-2">
+                            <div class="col-4 border-end border-secondary">
+                                <div class="fs-3 fw-bold text-orange">6</div>
+                                <div class="small text-secondary">Years of video editing</div>
+                            </div>
+                            <div class="col-4 border-end border-secondary">
+                                <div class="fs-3 fw-bold text-orange">4</div>
+                                <div class="small text-secondary">Programming languages</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="fs-3 fw-bold text-orange">Honors</div>
+                                <div class="small text-secondary">Every year, now Dean's List</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+                <!-- Put your photo in the same folder as this file and name it profile.jpg (square photos work best). -->
+                <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="photo-circle" role="img" aria-label="Photo of Aron Eustaquio"></div>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="border-start border-4 border-orange ps-3 mb-4 fw-bold">Skills</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+ 
+                <div class="col">
+                    <div class="card h-100 border-secondary">
+                        <div class="card-body">
+                            <h3 class="h5 text-orange">Programming</h3>
+                            <p class="mb-0">C#, Java, Python, and GDScript.</p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col">
+                    <div class="card h-100 border-secondary">
+                        <div class="card-body">
+                            <h3 class="h5 text-orange">Databases</h3>
+                            <p class="mb-0">MySQL, a database management system.</p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col">
+                    <div class="card h-100 border-secondary">
+                        <div class="card-body">
+                            <h3 class="h5 text-orange">Version control</h3>
+                            <p class="mb-0">Git, including experience working in collaborative environments.</p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col">
+                    <div class="card h-100 border-secondary">
+                        <div class="card-body">
+                            <h3 class="h5 text-orange">Video editing</h3>
+                            <p class="mb-0">6 years of experience with Adobe Premiere Pro and DaVinci Resolve.</p>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="border-start border-4 border-orange ps-3 mb-4 fw-bold">Education</h2>
+ 
+            <ul class="list-group list-group-flush col-lg-8">
+                <li class="list-group-item bg-transparent px-0 d-md-flex justify-content-between">
+                    <span class="text-secondary">Elementary</span>
+                    <span class="fw-bold">Marist School of Marikina</span>
+                </li>
+                <li class="list-group-item bg-transparent px-0 d-md-flex justify-content-between">
+                    <span class="text-secondary">Junior High School</span>
+                    <span class="fw-bold">NCLC - National Christian Life College</span>
+                </li>
+                <li class="list-group-item bg-transparent px-0 d-md-flex justify-content-between">
+                    <span class="text-secondary">Senior High School</span>
+                    <span class="fw-bold">FEU Marikina</span>
+                </li>
+                <li class="list-group-item bg-transparent px-0 d-md-flex justify-content-between">
+                    <span class="text-secondary">College (currently studying)</span>
+                    <span class="fw-bold">De La Salle Saint Benilde Antipolo</span>
+                </li>
+            </ul>
+ 
+            <div class="card border-secondary border-start border-4 border-orange col-lg-8 mt-4">
                 <div class="card-body">
-                    <h3>Summary</h3>
-                    <p>
-                        I'm currently studying Information Systems and spend a lot of my free time coding and working on my own projects. My main goal is to be a software engineer, but I also enjoy picking up new languages, tools, and developing games along the way.
+                    <h3 class="h5">Academic honors</h3>
+                    <p class="mb-0">
+                        I earned honors in every school year through senior high.
+                        In college, I've kept a Dean's List streak going up to now.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-        <section id="skills">
+    <section id="contact" class="py-5">
         <div class="container">
-            <div class="card border-secondary col-lg-8 mx-auto">
-                <div class="card-body">
-                    <h3>Skills</h3>
-                    <p>
-                        - I know some basic programming, including C#, Java, Python, and GDScript. 
-                        <br>
-                        - I also have experience with MySQL, a database management system. 
-                        <br>
-                        - I am familiar with version control systems like Git and have experience working in collaborative environments.
-                        <br>
-                        - I have 6 years of experience in Video Editing with Adobe Premiere Pro and DaVinci Resolve.
-                    </p>
-                </div>
+            <h2 class="border-start border-4 border-orange ps-3 mb-4 fw-bold">Contact me</h2>
+            <p class="text-secondary fs-5 col-lg-8">
+                Want to work together, ask about a project, or just talk code? Send me a message.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+                <a class="btn btn-orange" href="mailto:aroncedric.eustaquio@antipolo.benilde.edu.ph">Email me</a>
+                <a class="btn btn-outline-light" href="https://github.com/Aronikq-jr" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
     </section>
 
-    </section>
-
-        <section id="career">
-        <div class="container">
-            <div class="card border-secondary col-lg-8 mx-auto">
-                <div class="card-body">
-                    <h3>Schools that i attended to</h3>
-                    <p>
-                        - Elementary: Marist School of Marikina
-                        <br>
-                        - Junior High School: NCLC - National Christian Life College
-                        <br>
-                        - Senior High School: FEU Marikina
-                        <br>
-                        - College: Currently studying De La Salle Saint Benilde Antipolo
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="text-center text-muted py-4 border-top">
-        
+    <footer class="text-center text-secondary py-4 mt-5 border-top border-secondary-subtle">
         &copy; 2026 Aron Eustaquio. All rights reserved.
     </footer>
 </body>
